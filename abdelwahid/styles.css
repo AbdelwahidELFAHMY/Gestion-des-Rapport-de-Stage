@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Empêcher le défilement sur le corps */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+header{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2) inset;
+    margin: 0;
+    padding: 0;
+    background-color: #c2bfbf;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: x-large;
+}
+
+.main {
+    flex-grow: 1;
+    overflow-y: auto; /* Autoriser le défilement vertical si nécessaire */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    margin: 5px auto;
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    border-radius: 5px;
+    color: #000000;
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+
+}
+.main-content::before,
+.main-content::after{
+    content: "";
+  flex: 1;
+  background-color: rgb(255, 0, 0);
+}
+
+.RapportsItem {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* Style du tableau */
+.rapport-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-data {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Style de la liste des rapports */
+.rapport-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rapport-list-item {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.rapport-list-item:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style de la barre de recherche */
+.search-container {
+    position: relative;
+    margin-bottom: 20px; /* Marge en bas pour un espacement entre la barre de recherche et les éléments suivants */
+}
+
+/* Style de l'icône de recherche */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Ajustement pour positionner l'icône à gauche de la zone de texte */
+    transform: translateY(-50%);
+    color: #5a5959; /* Couleur de l'icône */
+    font-size: 18px; /* Taille de l'icône */
+    cursor: pointer; /* Curseur pointer pour indiquer que l'icône est cliquable */
+}
+
+/* Style de la zone de texte de recherche */
+#searchInput {
+    padding-left: 30px; /* Ajustement pour laisser de l'espace à gauche de la zone de texte pour l'icône */
+    width: 200px; /* Largeur de la zone de texte */
+    height: 30px; /* Hauteur de la zone de texte */
+    border: 1px solid #9b9a9a; /* Bordure de la zone de texte */
+    border-radius: 5px; /* Bord arrondi */
+}
+
+/* Style de l'effet de transition au survol de l'icône */
+.search-icon:hover {
+    color: #292929; /* Changement de couleur au survol */
+}
+
+footer {
+    position: relative;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #585757;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.contact-info div {
+    width: 48%; /* Largeur des deux éléments */
+}
+
+.contact-info h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer .copyright {
+    text-align: center; /* Alignement du texte au centre */
+}
+

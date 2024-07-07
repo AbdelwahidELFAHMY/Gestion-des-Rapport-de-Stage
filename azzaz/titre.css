@@ -1,0 +1,13 @@
+#container{
+    display: none;
+}
+.azaz{
+    background-color: burlywood;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+body{
+    background-color: aqua;
+}

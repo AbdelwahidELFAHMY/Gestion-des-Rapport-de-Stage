@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="motcle.php" method="post">
+        mot clé:<input type="text" placeholder="saisir le mot cle" name="motcle">
+        <input type="submit" value="valider">
+    </form>
+    <button id="mot cle btn">afficher les mot cle disponible</button>
+    <p>mot cle disponibles:</p>
+    <?php
+    // Inclure ici votre code PHP pour récupérer et afficher les mots clés disponibles
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Vérifier la connexion
+    if ($conn->connect_error) {
+        die("Connexion échouée : " . $conn->connect_error);
+    }
+
+    // Définir la requête SQL pour récupérer les mots clés
+    $sql = "SELECT ID_rapport
+    FROM rapport_stage;";
+
+    // Exécuter la requête SQL
+    $result = $conn->query($sql);
+
+    // Vérifier si la requête a renvoyé des résultats
+    if ($result->num_rows > 0) {
+        // Afficher tous les mots clés disponibles
+        while($row = $result->fetch_assoc()) {
+            echo $row["ID_rapport"] . "<br>";
+        }
+    } else {
+        // Si la requête n'a pas renvoyé de résultats
+        echo "Aucun mot clé disponible.";
+    }
+
+    // Fermer la connexion à la base de données
+    $conn->close();
+    ?>
+
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+.txtetimginfo{
+display: flex;
+flex-direction: row;
+
+}
+.txtetimginfo.imginfo{
+    margin-right: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.imginfo{
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+p{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.recherche{
+   display: flex;
+   flex-direction: row;
+}
+.imgmeca{
+    margin-right: 7px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+.rech{
+    margin-left: 5px;
+    margin-top: 0px;
+}
+.lien:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+
+}
+.lien{
+    border-radius: 10px;
+}
+#filiereList {
+    display: none; /* Caché par défaut */
+  
+}
+h1{
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+    font-style: initial;
+    
+}
+footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.contact-info div {
+    width: 48%; /* Largeur des deux éléments */
+}
+
+.contact-info h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer .copyright {
+    text-align: center; /* Alignement du texte au centre */
+}
+
