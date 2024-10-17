@@ -51,4 +51,4 @@
 - **Base de Données** : MySQL
 
 ## Schéma de la Base de Données
-![Relational Schema](./Schema_Relational_.png)  
+![Relational Schema](./SchemaRelational.png)  
