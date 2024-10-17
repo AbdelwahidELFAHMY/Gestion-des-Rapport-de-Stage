@@ -49,3 +49,6 @@
 - **Frontend** : HTML, CSS, JavaScript
 - **Backend** : PHP, MySQL
 - **Base de Données** : MySQL
+
+## Schéma de la Base de Données
+![Relational Schema](./DVLDDiagramme.png)  
